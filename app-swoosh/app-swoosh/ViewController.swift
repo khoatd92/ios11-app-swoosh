@@ -9,10 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var smooshImg: UIImageView!
+    @IBOutlet weak var backgoundImg: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        smooshImg.frame = CGRect(x: view.frame.size.width / 2 - smooshImg.frame.size.width / 2, y: 100, width: smooshImg.frame.size.width, height: smooshImg.frame.size.height)
+        backgoundImg.frame = view.frame
     }
 
     override func didReceiveMemoryWarning() {
