@@ -176,10 +176,18 @@
                                     </label>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RX6-X3-94M">
+                                <rect key="frame" x="10" y="10" width="29" height="24"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <segue destination="ZQA-KK-bWK" kind="unwind" unwindAction="unwindFromSkillVCWithUnwindSegue:" id="SOK-LQ-goe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="20k-2N-oOr" firstAttribute="top" secondItem="Qnr-Of-9N7" secondAttribute="top" constant="155" id="3ma-tq-RXK"/>
+                            <constraint firstItem="RX6-X3-94M" firstAttribute="top" secondItem="Qnr-Of-9N7" secondAttribute="top" constant="10" id="9qX-fI-zgy"/>
                             <constraint firstItem="GiJ-Tm-HyW" firstAttribute="bottom" secondItem="7k0-SQ-uyY" secondAttribute="bottom" id="9zH-1m-E7Z"/>
                             <constraint firstItem="vLf-If-PfG" firstAttribute="top" secondItem="7k0-SQ-uyY" secondAttribute="top" constant="20" id="CuP-eA-PSu"/>
                             <constraint firstItem="GiJ-Tm-HyW" firstAttribute="top" secondItem="Qnr-Of-9N7" secondAttribute="top" id="K3n-ID-WnX"/>
@@ -189,6 +197,7 @@
                             <constraint firstItem="7k0-SQ-uyY" firstAttribute="bottom" secondItem="Ylu-if-SaQ" secondAttribute="bottom" constant="20" id="T4N-m8-VFk"/>
                             <constraint firstItem="GiJ-Tm-HyW" firstAttribute="leading" secondItem="7k0-SQ-uyY" secondAttribute="leading" id="Wo4-hC-gKU"/>
                             <constraint firstItem="20k-2N-oOr" firstAttribute="leading" secondItem="7k0-SQ-uyY" secondAttribute="leading" constant="16" id="cop-9R-LDg"/>
+                            <constraint firstItem="RX6-X3-94M" firstAttribute="leading" secondItem="7k0-SQ-uyY" secondAttribute="leading" constant="10" id="foo-42-x8K"/>
                             <constraint firstItem="vLf-If-PfG" firstAttribute="centerX" secondItem="7k0-SQ-uyY" secondAttribute="centerX" id="j0Z-eI-I2Z"/>
                             <constraint firstItem="7k0-SQ-uyY" firstAttribute="trailing" secondItem="20k-2N-oOr" secondAttribute="trailing" constant="16" id="mkt-Ry-sJC"/>
                             <constraint firstItem="7k0-SQ-uyY" firstAttribute="trailing" secondItem="Ylu-if-SaQ" secondAttribute="trailing" constant="16" id="nie-G4-ct9"/>
@@ -198,6 +207,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7VY-GC-iUv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZQA-KK-bWK" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="840.79999999999995" y="133.5832083958021"/>
         </scene>
@@ -294,6 +304,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="backButton" width="29" height="24"/>
         <image name="beginnerBallerBG" width="414" height="736"/>
         <image name="desiredLeagueBG" width="414" height="736"/>
         <image name="swooshLogo" width="119" height="20"/>
